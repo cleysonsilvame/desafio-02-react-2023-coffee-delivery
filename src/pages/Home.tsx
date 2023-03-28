@@ -1,7 +1,6 @@
-import { Header } from "../components/Header";
-import { Headline } from "../components/Headline";
-import { Coffee } from "../components/Coffee";
-import { coffees } from "../services/coffees";
+import { Headline } from '../components/Headline'
+import { Coffee } from '../components/Coffee'
+import { coffees } from '../services/coffees'
 
 export function Home() {
   return (
@@ -18,5 +17,5 @@ export function Home() {
         </div>
       </div>
     </>
-  );
+  )
 }

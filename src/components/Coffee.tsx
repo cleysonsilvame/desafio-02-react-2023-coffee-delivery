@@ -1,11 +1,11 @@
-import { Plus, Minus, ShoppingCartSimple } from "phosphor-react";
+import { Plus, Minus, ShoppingCartSimple } from 'phosphor-react'
 
 interface CoffeeProps {
-  name: string;
-  description: string;
-  src: string;
-  price: number;
-  tags: string[];
+  name: string
+  description: string
+  src: string
+  price: number
+  tags: string[]
 }
 
 export function Coffee({ name, description, src, price, tags }: CoffeeProps) {
@@ -33,7 +33,9 @@ export function Coffee({ name, description, src, price, tags }: CoffeeProps) {
       <div className="mt-[33px] w-full flex gap-2 items-center justify-end">
         <div className="flex items-baseline gap-1 mr-auto">
           <p className="font-roboto text-[14px] text-base-text">R$</p>
-          <p className="font-baloo font-extrabold text-2xl text-base-text">{price}</p>
+          <p className="font-baloo font-extrabold text-2xl text-base-text">
+            {price}
+          </p>
         </div>
         <div className=" flex items-center justify-between gap-1 bg-base-button rounded-[6px] w-[72px] h-[38px] p-2">
           <button>
@@ -50,5 +52,5 @@ export function Coffee({ name, description, src, price, tags }: CoffeeProps) {
         </button>
       </div>
     </div>
-  );
+  )
 }
