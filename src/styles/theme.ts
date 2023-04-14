@@ -11,6 +11,7 @@ export const defaultTheme = {
       text: '#574F4D',
       subtitle: '#403937',
       title: '#272221',
+      danger: 'rgb(243, 80, 80)',
     },
     brand: {
       'purple-dark': '#4B2995',

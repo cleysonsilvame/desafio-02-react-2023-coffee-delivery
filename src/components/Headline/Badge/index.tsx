@@ -3,7 +3,7 @@ import { BadgeContainer, ColorType, Icon } from './styles'
 
 export interface BadgeProps {
   icon: ReactNode
-  text: string
+  text: ReactNode
   color: ColorType
 }
 

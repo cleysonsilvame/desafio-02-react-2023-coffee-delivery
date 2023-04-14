@@ -1,7 +1,7 @@
 import { ShoppingCart, Timer, Package, Coffee } from 'phosphor-react'
 
 import CoffeeDeliveryImage from '../../assets/coffee-delivery.png'
-import { Badge } from './Bagde'
+import { Badge } from './Badge'
 import { InnerContainer, SectionContainer } from './styles'
 
 export function Headline() {

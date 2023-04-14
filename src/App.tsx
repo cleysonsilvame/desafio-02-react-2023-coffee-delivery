@@ -6,6 +6,7 @@ import { Checkout } from './pages/Checkout'
 import { Home } from './pages/Home'
 import { GlobalStyle } from './styles/global'
 import { defaultTheme } from './styles/theme'
+import { Confirmed } from './pages/Confirmed'
 
 export function App() {
   return (
@@ -15,6 +16,7 @@ export function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="checkout" element={<Checkout />} />
+            <Route path="confirmed" element={<Confirmed />} />
           </Route>
         </Routes>
       </BrowserRouter>
