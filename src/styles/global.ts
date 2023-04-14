@@ -1,6 +1,10 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
+  :root {    
+    --toastify-color-success: ${({ theme }) => theme.colors.brand.purple};
+  }
+
   * {
     margin: 0;
     padding: 0;

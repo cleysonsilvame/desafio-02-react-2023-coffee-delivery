@@ -69,7 +69,7 @@ export function Checkout() {
             <span>{formatToCurrency.format(shippingPrice)}</span>
             <span>Total</span>
             <span>
-              {formatToCurrency.format(shippingPrice * totalPriceFromCart)}
+              {formatToCurrency.format(shippingPrice + totalPriceFromCart)}
             </span>
           </SummaryContainer>
           <ConfirmButton type="submit" disabled={!cart.length}>

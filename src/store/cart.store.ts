@@ -17,6 +17,7 @@ interface CartStore {
 
 export const useCartStore = storeFactory<CartStore>('cart-store', (set) => ({
   cart: [],
+
   addOrIncrementCoffeeInCart: (cart) => {
     set(
       (state) => {

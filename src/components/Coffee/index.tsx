@@ -1,4 +1,4 @@
-import { ShoppingCartSimple } from 'phosphor-react'
+import { ShoppingCartSimple, Coffee as CoffeeIcon } from 'phosphor-react'
 import {
   CoffeeContainer,
   CartContainer,
@@ -11,6 +11,8 @@ import {
 import { CountButton } from '../CountButton'
 import { useState } from 'react'
 import { useCartStore } from '../../store/cart.store'
+import { toast } from 'react-toastify'
+import { defaultTheme } from '../../styles/theme'
 
 interface CoffeeProps {
   name: string
@@ -29,6 +31,15 @@ export function Coffee({ name, description, src, price, tags }: CoffeeProps) {
   function handleSendCoffeeToCart() {
     addOrIncrementCoffeeInCart({ name, amount: coffeeCount, src, price })
     setCoffeeCount(1)
+    toast.success(`${coffeeCount} ${name} adicionado ao carrinho`, {
+      icon: (
+        <CoffeeIcon
+          size={32}
+          weight="fill"
+          color={defaultTheme.colors.brand.purple}
+        />
+      ),
+    })
   }
 
   return (
@@ -46,7 +57,11 @@ export function Coffee({ name, description, src, price, tags }: CoffeeProps) {
       <CartContainer>
         <PriceContainer>
           <p>R$</p>
-          <p>{price}</p>
+          <p>
+            {new Intl.NumberFormat('pt-BR', {
+              minimumFractionDigits: 2,
+            }).format(price)}
+          </p>
         </PriceContainer>
 
         <CountButton

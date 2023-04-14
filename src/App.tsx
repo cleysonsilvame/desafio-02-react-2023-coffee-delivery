@@ -7,6 +7,8 @@ import { Home } from './pages/Home'
 import { GlobalStyle } from './styles/global'
 import { defaultTheme } from './styles/theme'
 import { Confirmed } from './pages/Confirmed'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 export function App() {
   return (
@@ -22,6 +24,7 @@ export function App() {
       </BrowserRouter>
 
       <GlobalStyle />
+      <ToastContainer />
     </ThemeProvider>
   )
 }
