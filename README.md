@@ -16,7 +16,7 @@ Coffee Delivery
 </p>
 
 <p align="center">
-  <img alt="App Coffee Delivery" src=".github/coffee-delivery.png" width="75%" >
+  <img alt="App Coffee Delivery" src=".github/iframe.png" >
 </p>
 
 ## 🚀 Tecnologias
